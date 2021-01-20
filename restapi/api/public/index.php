@@ -256,4 +256,12 @@ $app->group('/permits/',function()
 // ========================================================================
 // APIS AUTHENTICATION
 //=========================================================================
+$app->group('/authentication/',function()
+{
+    //post user insertar usuario a base de datos
+    $this->post('auth_register',function(Request $request, Response $response)
+    {
+        
+    });
+});
 $app->run();
