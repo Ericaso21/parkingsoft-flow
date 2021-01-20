@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="description" content="Parquedero Parkingsoft" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="ECEJS" />
+    <meta name="theme-color" content="#009688" />
+    <link rel="shortcut icon" href="Assets/images/uploads/favicon.ico" />
+    <title>Usuarios</title>
+    <!-- Main CSS-->
+    <link rel="stylesheet" type="text/css" href="Assets/css/main.css" />
+    <link rel="stylesheet" type="text/css" href="Assets/css/bootstrap-select.min.css"/>
+    <link rel="stylesheet" type="text/css" href="Assets/css/style.css" />
+  </head>
+
+  <body class="app sidebar-mini">
+    <!-- Navbar-->
+    <header class="app-header">
+      <a class="app-header__logo" href="dashboard.html">Parkingsoft</a>
+      <!-- Sidebar toggle button--><a
+        class="app-sidebar__toggle"
+        href="#"
+        data-toggle="sidebar"
+        aria-label="Hide Sidebar"
+      ></a>
+      <!-- Navbar Right Menu-->
+      <ul class="app-nav">
+        <!-- User Menu-->
+        <li class="dropdown">
+          <a
+            class="app-nav__item"
+            href="#"
+            data-toggle="dropdown"
+            aria-label="Open Profile Menu"
+            ><i class="fa fa-user fa-lg"></i
+          ></a>
+          <ul class="dropdown-menu settings-menu dropdown-menu-right">
+            <li>
+              <a class="dropdown-item" href="opciones.html"
+                ><i class="fa fa-cog fa-lg"></i> Opciones</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item" href="perfil.html"
+                ><i class="fa fa-user fa-lg"></i> Perfil</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item" href="index.html"
+                ><i class="fa fa-sign-out fa-lg"></i> Cerrar sesión</a
+              >
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </header>
+    <!-- Sidebar menu-->
+    <div class="app-sidebar__overlay" data-toggle="sidebar"></div>
+    <aside class="app-sidebar">
+      <div class="app-sidebar__user">
+        <img
+          class="app-sidebar__user-avatar"
+          src="Assets/images/uploads/avatar.png"
+          alt="User Image"
+        />
+        <div>
+          <p class="app-sidebar__user-name">Eric Solarte</p>
+          <p class="app-sidebar__user-designation">Administrador</p>
+        </div>
+      </div>
+      <ul class="app-menu">
+        <li>
+          <a class="app-menu__item" href="dashboard.html"
+            ><i class="app-menu__icon fa fa-id-badge" aria-hidden="true"></i
+            ><span class="app-menu__label">Dashboard</span></a
+          >
+        </li>
+        <li class="treeview">
+          <a class="app-menu__item" href="#" data-toggle="treeview"
+            ><i class="app-menu__icon fa fa-users" aria-hidden="true"></i
+            ><span class="app-menu__label">Usuarios</span
+            ><i class="treeview-indicator fa fa-angle-right"></i
+          ></a>
+          <ul class="treeview-menu">
+            <li>
+              <a class="treeview-item" href="usuarios.html"
+                ><i class="icon fa fa-circle-o"></i> Usuarios</a
+              >
+            </li>
+            <li>
+              <a class="treeview-item" href="rolesUsuarios.html"
+                ><i class="icon fa fa-circle-o"></i> Roles</a
+              >
+            </li>
+            <li>
+              <a class="treeview-item" href="permisos.html"
+                ><i class="icon fa fa-circle-o"></i> Permisos</a
+              >
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a class="app-menu__item" href="clientes.html">
+            <i class="app-menu__icon fas fa-user" aria-hidden="true"></i
+            ><span class="app-menu__label">Clientes</span></a
+          >
+        </li>
+        <li class="treeview">
+          <a class="app-menu__item" href="#" data-toggle="treeview"
+            ><i class="app-menu__icon fa fa-car" aria-hidden="true"></i
+            ><span class="app-menu__label">Vehiculos</span
+            ><i class="treeview-indicator fa fa-angle-right"></i
+          ></a>
+          <ul class="treeview-menu">
+            <li>
+              <a class="treeview-item" href="registroVehiculos.html"
+                ><i class="icon fa fa-circle-o"></i> Registrar vehiculos</a
+              >
+            </li>
+            <li>
+              <a class="treeview-item" href="ingresoVehiculo.html"
+                ><i class="icon fa fa-circle-o"></i> Ingreso vehiculos</a
+              >
+            </li>
+            <li>
+              <a class="treeview-item" href="salidaVehiculo.html"
+                ><i class="icon fa fa-circle-o"></i> Salida vehiculos</a
+              >
+            </li>
+            <li>
+              <a class="treeview-item" href="tipoVehiculo.html"
+                ><i class="icon fa fa-circle-o"></i> Tipo vehiculo</a
+              >
+            </li>
+          </ul>
+        </li>
+
+        <li>
+          <a class="app-menu__item" href="bloques.html"
+            ><i class="app-menu__icon fas fa-th"></i
+            ><span class="app-menu__label">Bloques</span></a
+          >
+        </li>
+        <li>
+          <a class="app-menu__item" href="tarifas.html"
+            ><i class="app-menu__icon fa fa-dashboard"></i
+            ><span class="app-menu__label">Tarifas</span></a
+          >
+        </li>
+        <li>
+          <a class="app-menu__item" href="reportes.html"
+            ><i class="app-menu__icon fa fa-file-text-o"></i
+            ><span class="app-menu__label">Reportes</span></a
+          >
+        </li>
+        <li>
+          <a class="app-menu__item" href="index.html"
+            ><i class="app-menu__icon fa fa-sign-out" aria-hidden="true"></i
+            ><span class="app-menu__label">Cerrar sesión</span></a
+          >
+        </li>
+      </ul>
+    </aside>
+    <!-- Modal -->
+<div class="modal fade" id="modalFormUsers" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header headerRegister">
+                <h5 class="modal-title" id="titleModal">Nuevo usuario</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form id="formUsers" name="formUsers" class="form-horizontal">
+                    <input type="hidden" id="idUsers" name="idUsers" value="">
+                    <p class="text-primary">Todos los campos son obligatorios</p>
+                    <div class="form-row">
+                      <div class="form-group col-md-6">
+                        <label for="document_number">Identificación</label>
+                        <input type="text" class="form-control" id="document_number" name="document_number"
+                            required="">
+                    </div>
+                    <div class="form-group col-md-6">
+                      <label for="pk_fk_id_document_type">Tipo de documento</label>
+                      <select name="pk_fk_id_document_type" id="pk_fk_id_document_type"
+                          class="form-control selectpicker" required=""> 
+                        <option value="1">Cedula de ciudadania</option>
+                        <option value="2">Cedula de extranjeria</option>
+                        <option value="3">Tarjeta de identidad</option>
+                        <option value="4">Pasaporte</option>
+                      </select>
+                  </div>
+                    </div>
+                    <div class="form-row">
+                      <div class="form-group col-md-6">
+                          <label for="first_name">Primer nombre</label>
+                          <input type="text" class="form-control" id="first_name" name="first_name"
+                              required="">
+                      </div>
+                      <div class="form-group col-md-6">
+                          <label for="second_name">Segundo nombre</label>
+                          <input type="text" class="form-control" id="second_name" name="second_name">
+                      </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="surname">Primer apellido</label>
+                        <input type="text" class="form-control" id="surname" name="surname" required="">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="second_surname">Segundo apellido</label>
+                        <input type="text" class="form-control" id="second_surname"
+                            name="second_surname">
+                    </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="genders">Genero</label>
+                    <select name="genders" id="genders" class="form-control selectpicker">
+                      <option value="1">Masculino</option>
+                      <option value="2">Femenino</option>
+                      <option value="3">Otros</option>
+                    </select>
+                </div>
+                  <div class="form-group col-md-6">
+                      <label for="telephone">Teléfono</label>
+                      <input type="text" class="form-control" id="telephone" name="telephone">
+                  </div>
+              </div>
+              <div class="form-row">
+                  <div class="form-group col-md-6">
+                      <label for="pk_fk_id_roles">Rol usuario</label>
+                      <select name="pk_fk_id_roles" data-live-search="true" id="pk_fk_id_roles" class="form-control"
+                          required=""></select>
+                  </div>
+                  <div class="form-group col-md-6">
+                      <label for="email">Estado</label>
+                      <select name="roles_users_status" id="roles_users_status" class="form-control selectpicker"
+                          required="">
+                          <option value="1">Activo</option>
+                          <option value="2">Inactivo</option>
+                      </select>
+                  </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="email">Email</label>
+                  <input type="text" class="form-control" id="email" name="email" required="">
+              </div>
+                  <div class="form-group col-md-6">
+                      <label for="password_user">Contraseña</label>
+                      <input type="password" class="form-control" id="password_user"
+                          name="password_user">
+                  </div>
+              </div>
+              <div class="form-row">
+                <span id="updated_att"></span>
+              </div>
+                    <div class="tile-footer">
+                        <button id="btnActionForm" class="btn btn-primary" type="submit"><i
+                                class="fa fa-fw fa-lg fa-check-circle"></i><span
+                                id="btnText">Guardar</span></button>
+                                <button class="btn btn-danger" type="button" data-dismiss="modal"><i class="fa fa-fw fa-lg fa-times-circle"></i>Cerrar</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+    <!-- Modal -->
+    <div class="modal fade" id="modalViewUser" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+          <div class="modal-content">
+              <div class="modal-header header-primary">
+                  <h5 class="modal-title" id="titleModal">Datos usuario</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                  </button>
+              </div>
+              <div class="modal-body">
+                  <table class="table table-bordered">
+                    <tbody>
+                      <tr>
+                        <td>Documento</td>
+                        <td id="celdocument_number"></td>
+                      </tr>
+                      <tr>
+                        <td>Tipo documento</td>
+                        <td id="celdocument_type_acronym"></td>
+                      </tr>
+                      <tr>
+                        <td>Genero</td>
+                        <td id="celname_gender"></td>
+                      </tr>
+                      <tr>
+                        <td>Nombre</td>
+                        <td id="celfirst_name"></td>
+                      </tr>
+                      <tr>
+                        <td>Apellido</td>
+                        <td id="celsurname"></td>
+                      </tr>
+                      <tr>
+                        <td>Email (Usuario):</td>
+                        <td id="celemail"></td>
+                      </tr>
+                      <tr>
+                        <td>Tipo usuario:</td>
+                        <td id="celname_role"></td>
+                      </tr>
+                      <tr>
+                        <td>Estado</td>
+                        <td id="celroles_users_status"></td>
+                      </tr>
+                      <tr>
+                        <td>Fecha creación:</td>
+                        <td id="celcreated_att"></td>  
+                      </tr>
+                    </tbody>
+                  </table>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+              </div>
+          </div>
+      </div>
+  </div>
+    <main class="app-content">
+        <div class="app-title">
+            <div>
+                <h1><i class="fas fa-users"></i>Usuarios <span>Parkingsoft </span>
+                    <button class="btn btn-primary" type="button" onclick="openModal();"><i class="fas fa-plus-circle"></i>
+                        Nuevo </button>
+                </h1>
+            </div>
+            <ul class="app-breadcrumb breadcrumb">
+                <li class="breadcrumb-item"><i class="fa fa-home fa-lg"></i></li>
+                <li class="breadcrumb-item"><a href="usuarios.html">Nuevos Usuarios</a></li>
+            </ul>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="tile">
+                    <div class="tile-body">
+                        <div class="table-responsive">
+                            <table class="table table-striped table-bordered dt-responsive nowrap" id="tableUsers">
+                                <thead>
+                                    <tr>
+                                        <th>Documento</th>
+                                        <th>Tipo documento</th>
+                                        <th>Genero</th>
+                                        <th>Nombre</th>
+                                        <th>Apellido</th>
+                                        <th>Email</th>
+                                        <th>Rol</th>
+                                        <th>Estado</th>
+                                        <th>Fecha creación</th>
+                                        <th>Acciones</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script>
+        const base_url = "http://localhost/restapi/api/public";
+    </script>
+    <!-- Essential javascripts for application to work-->
+    <script src="Assets/js/jquery-3.3.1.min.js"></script>
+    <script src="Assets/js/popper.min.js"></script>
+    <script src="Assets/js/bootstrap.min.js"></script>
+    <script src="Assets/js/main.js"></script>
+    <script src="Assets/js/fontawesome.js"></script>
+    <!-- The javascript plugin to display page loading on top-->
+    <script src="Assets/js/plugins/pace.min.js"></script>
+    <script type="text/javascript" src="Assets/js/plugins/sweetalert.min.js"></script>
+    <!-- Data table plugin-->
+    <script type="text/javascript" src="Assets/js/plugins/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="Assets/js/plugins/dataTables.bootstrap.min.js"></script>
+    <script type="text/javascript" src="Assets/js/plugins/bootstrap-select.min.js"></script>
+    <script src="Assets/js/functions_usuario.js"></script>
+    
+    
+    
+    
+    </body>
+    </html>
