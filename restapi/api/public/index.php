@@ -258,8 +258,13 @@ $app->group('/permits/',function()
 //=========================================================================
 $app->group('/authentication/',function()
 {
-    //post user insertar usuario a base de datos
+    //user register
     $this->post('auth_register',function(Request $request, Response $response)
+    {
+        
+    });
+    //user login
+    $this->post('auth',function(Request $request, Response $response)
     {
         
     });
