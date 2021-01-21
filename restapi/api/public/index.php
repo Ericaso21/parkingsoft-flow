@@ -261,7 +261,7 @@ $app->group('/authentication/',function()
     //user register
     $this->post('auth_register',function(Request $request, Response $response)
     {
-        
+        $datos = $request->getParsedBody();
     });
     //user login
     $this->post('auth',function(Request $request, Response $response)
